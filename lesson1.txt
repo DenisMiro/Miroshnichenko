@@ -1,9 +1,11 @@
+Парты
 c1 = int(input())
 c2 = int(input()) 
 c3 = int(input()) 
 n = c1//2+c2//2+c3//2+c1%2+c2%2+c3%2
 print(n)
 
+Шнурки
 a = int(input()) 
 b = int(input()) 
 l = int(input()) 
