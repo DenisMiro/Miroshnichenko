@@ -3,6 +3,7 @@ n=input()
 print(n[:n.find('h')+1]+n[n.find('h')+1:n.rfind('h')].replace('h','H')+n[n.rfind('h'):])
 
 Удалить каждый третий символ
-n=input() for k in range(len(n)):
+n=input() 
+for k in range(len(n)):
     if k%3!=0:
         print(n[k],sep='',end='')

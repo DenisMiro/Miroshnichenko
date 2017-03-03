@@ -2,9 +2,11 @@
 n=[int(k) for k in input().split()] 
 a=['I' for k in range(n[0])] 
 for k in range(n[1]):
-    b=[int(k) for k in input().split()]
+    b=[int(k) 
+for k in input().split()]
     for k in range(b[0]-1,b[1]):
-        a[k]='.' for k in range(len(a)):
+        a[k]='.' 
+for k in range(len(a)):
     print(a[k],end='')
 
 Ферзи
@@ -12,9 +14,11 @@ x,y,z=[],[],()
 for i in range(8):
     a=input().split()
     x.append(a[0])
-    y.append(a[1]) for n in range(len(x)):
+    y.append(a[1]) 
+for n in range(len(x)):
     for k in range(len(x)):
         if (n!=k)and(x[n]==x[k] or y[n]==y[k] or abs(int(x[n])-int(x[k]))==abs(int(y[n])-int(y[k]))):
-            z=1 if z==1:
+            z=1 
+if z==1:
     print('YES') else:
     print('NO')
