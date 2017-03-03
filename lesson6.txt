@@ -1,0 +1,23 @@
+Максимальное число идкщих подряд равных элементов
+n=int(input()) 
+a,b,c=-1,0,0 
+while n!=0:
+    if a==n:
+        b+=1
+    else:
+        a=n
+        c=max(b,c)
+        b=1
+    n=int(input()) c=max(b,c)
+print(c)
+
+Стандартное отклонение
+import math 
+n=int(input()) 
+a,b,c=0,0,0 
+while n!=0:
+    c+=n**2
+    a+=n
+    b+=1
+    n=int(input())
+print(math.sqrt((c-2*a*(a/b)+b*(a/b)**2)/(b-1)))
