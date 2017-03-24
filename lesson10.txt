@@ -1,0 +1,22 @@
+Полиглоты 
+def inv(a):
+    l=set()
+    for i in range(a):
+        l.add(input())
+    return(l) 
+l=[] lan=set() 
+pup=set() 
+num_pup=int(input()) 
+for i in range(num_pup):
+    num_lan=int(input())
+    l.append(inv(num_lan)) 
+for i in range(num_pup-1):
+    pup=pup|l[i]&l[i+1] 
+for i in range(num_pup-1):
+    lan=lan|l[i]|l[i+1] 
+print(len(pup)) 
+for i in range(len(pup)):
+    print(list(pup)[i]) 
+print(len(lan)) 
+for i in range(len(lan)):
+    print(list(lan)[i])

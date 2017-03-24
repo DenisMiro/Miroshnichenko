@@ -1,0 +1,19 @@
+Разворот последовательности 
+def rev(a):
+    if a==0:
+        print(a)
+    elif a!=0:
+        rev(int(input()))
+        print(a)
+    return(a)
+rev(int(input()))
+
+Числа Фибоначчи 
+def fib(n):
+    if n==0:
+        return(0)
+    elif n==1:
+        return(1)
+    else:
+        return(fib(n-2)+fib(n-1))
+print(fib(int(input())))

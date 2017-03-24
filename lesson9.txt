@@ -1,0 +1,21 @@
+Побочная диагональ 
+n=int(input()) 
+a=[[0]*n for i in range(n)] 
+for i in range(n):
+    a[i][(n-1)-i]=1
+    for j in range(n-i,n):
+        a[i][j]=2 for st in a:
+    print(' '.join([str(index) for index in st]))
+
+Поменять столбцы 
+def swap_columns(a,i,j):
+    for num in range(n):
+        new=a[num][i]
+        a[num][i]=a[num][j]
+        a[num][j]=new 
+n,m=[int(i) for i in input().split()] 
+a=[[int(k) for k in input().split()] for m in range(n)] 
+i,j=[int(i) for i in input().split()] 
+swap_columns(a,i,j) 
+for st in a:
+    print(' '.join([str(index) for index in st]))
